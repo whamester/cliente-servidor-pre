@@ -1,0 +1,31 @@
+<div class="col-md-6 offset-md-3">
+    <div class="card">
+        <div class="card-header">
+            <h1>EDITAR PRODUCTO {{id}}</h1>
+        </div>
+
+        <div class="card-body">
+
+            <form action="/update/{{id}}" method="GET">
+
+                <div class="form-group">
+                    <input type="text" name="nombre" placeholder="Nombre" value={{nombre}} class="form-control"
+                        autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="number" name="precio" placeholder="Precio" value={{precio}} class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="number" name="existencias" placeholder="Existencias" value={{existencias}
+                        class="form-control">
+                </div>
+
+                <button class="btn btn-primary btn-block">
+                    GUARDAR
+                </button>
+                <a href="/" class="btn btn-secondary btn-block">CANCELAR</a>
+
+            </form>
+        </div>
+    </div>
+</div>
